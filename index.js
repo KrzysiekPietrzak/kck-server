@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 const mongoose = require('mongoose')
-const Speaker = require('./models/speaker.model.js')
+const Speaker = require('./models/Speaker.model.js')
 
 
 const PORT = process.env.PORT || 3030;
