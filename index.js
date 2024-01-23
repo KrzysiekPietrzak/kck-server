@@ -77,7 +77,7 @@ transporter.verify((error, success) => {
 });
 
 app.post('/api/send', (req, res, next) => {
-  const name = "krzysztof.pietrzak17@gmail.com"
+  const name = "kck148733"
   const email = "req.body.email"
   const message = "<h1>Wysłano zgłoszenie na udział w konferencji naukowej<h1> <br> "+
   "<h2>"+ req.body.nameSurname +  " wysłał/a zgłoszenie jako " +req.body.affiliation +  " z wystąpieniem na temat " +req.body.title+"</h2> <br>"+
@@ -85,7 +85,7 @@ app.post('/api/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: 'krzysztof.pietrzak17@gmail.com',
+    to: email,
     subject: 'Potwierdzenie zapisu',
     html: message
   }
