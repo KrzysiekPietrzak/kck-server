@@ -76,7 +76,7 @@ transporter.verify((error, success) => {
   }
 });
 
-app.post('/send', (req, res, next) => {
+app.post('/api/send', (req, res, next) => {
   const name = "krzysztof.pietrzak17@gmail.com"
   const email = "req.body.email"
   const message = "<h1>Wysłano zgłoszenie na udział w konferencji naukowej<h1> <br> "+
